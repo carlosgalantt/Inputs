@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gloock&family=Kanit:ital,wght@1,900&family=Lobster&family=Poppins&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url('https://images.unsplash.com/photo-1618556450991-2f1af64e8191?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80');
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            font-weight: bold;
+        }
+        .container{
+            background-image: url('https://images.unsplash.com/photo-1618556450991-2f1af64e8191?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80');
+            background-size: cover;
+            box-shadow:7px 7px 30px black;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 18px;
+            width: 400px;
+            height: 400px;
+            margin-top: 140px;
+        }
+        .inputs{
+            margin-left: auto;
+            margin-left: auto;
+            padding-top: 25px;
+            padding-right: 150px;
+            width: 100%;
+            text-align: center;
+            padding-left: 60px;
+        }
+        input{
+            width: 280px;
+            height: 30px;
+            border: none;
+            border-radius: 18px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .label{
+            font-size: 14px;
+            text-align: left;
+        }
+        .nome{
+            text-align: left;
+            width: 30px;
+            height: 20px;
+        }
+        pre{
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+        button{
+            background-color: white;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 150px;
+        }
+        button:hover{
+            background-color: rgb(224, 222, 224);
+            transition: 0.1s;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+       <section class="inputs">
+        <form action="algo">
+            <label><pre>           Usuário</pre> </label> <br>
+            <input type="text" autocomplete="off" placeholder="Digite o nome de usuário" required><br><br>
+            <label><pre>           Senha</pre></label> <br>
+            <input type="password" autocomplete="off" placeholder="Digite a senha" required>
+        </form> <br>
+       </section>
+            <input class="nome" name="confirmado" type="checkbox" checked for="confirmado"><label class="label">Concordo com todos os termos da lei</label> <br><br><br>
+       <button onclick="enviar">LOGIN</button>
+    </section>
+</body>
+</html>
